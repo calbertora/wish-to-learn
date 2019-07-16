@@ -4,9 +4,17 @@
   "description": "Full-stack project of things that I wish to learn",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon",
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "calbertora@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.6.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "nodemon": "^1.19.1"
+  }
 }
