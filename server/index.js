@@ -1,6 +1,16 @@
-const express = require('express');
-const app = express();
+const bodyParser = require('body-parser');
 const auth = require('../auth/authController');
+const express = require('express');
+
+const app = express();
+
+// Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Routes
+const userRoute = require('./routes/user');
+app.use('/api/user',userRoute);
 
 const port = 3000;
 
